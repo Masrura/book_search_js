@@ -75,13 +75,15 @@ const displayResult = (allBooks, booksInfo) => {
             const div = document.createElement('div');
             div.classList.add('col-md-3');
             div.innerHTML = `
+            <div class="box">
                 <img class="rounded" height=200 width=200 src=${image} alt="">
                 <div class="details">
-                    <h4 class="fw-bolder">${bookName}</h4>
+                    <h5 class="fw-bolder">${bookName}</h5>
                     <p class="fw-bolder">${authorName}</p>
                     <p class="fw-bolder">${publisher}</p>
                     <p class="fw-bolder">${firstPublished}</p>
                 </div>
+            </div>
             `;
 
             displayField.appendChild(div);
