@@ -1,0 +1,24 @@
+#search-book-field{
+    margin: 5%;
+}
+#search-text{
+    width: 100%;
+    border: 2px solid black;
+}
+.loading{
+    display:none;
+    margin-left:45%;
+}
+#number-of-result{
+    margin:2%;
+}
+.col-md-3{
+    padding:5%;
+}
+img{
+    height: 200px;
+    width: 200px;
+}
+.details{
+    padding:8%;
+}
