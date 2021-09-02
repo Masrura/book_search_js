@@ -38,9 +38,13 @@ const searchBook = () => {
     fetch(url)
         .then(res => res.json())
         .then(data => displayResult(data, data.docs))
+        .catch(error => show(error))
     searchField.value = '';
 }
-
+const show = (error) => {
+    toggleSpinner('none');
+    displayResultNo.innerHTML = `<h2 >${error}, Please try again</h2>`;
+}
 //display result function
 
 const displayResult = (allBooks, booksInfo) => {
