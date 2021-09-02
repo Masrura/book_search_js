@@ -43,7 +43,7 @@ const searchBook = () => {
     displayField.textContent = '';
     notFound.textContent=''
     const searchField = document.getElementById('search-text');
-    const url = `http://openlibrary.org/search.json?q=${searchField.value}`;
+    const url = `https://openlibrary.org/search.json?q=${searchField.value}`;
     console.log(url);
     fetch(url)
         .then(res => res.json())
